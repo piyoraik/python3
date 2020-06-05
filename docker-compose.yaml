@@ -1,0 +1,19 @@
+version: '3'
+services:
+    python:
+        container_name: python
+        build:
+            context: ./
+        volumes:
+            - ./app:/app
+        tty: true
+
+    mysql:
+        container_name: mariadb
+        image: mariadb:10.5.3
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: example
+        volumes:
+            - ./db:/var/lib/mysql
