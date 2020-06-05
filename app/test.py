@@ -1,7 +1,7 @@
 import pymysql
 
 # sql = "CREATE TABLE test (id int, name varchar(10))"
-sql = "INSERT INTO test VALUES(10,'あ')"
+sql = "INSERT INTO test VALUES(10,'サトシ')"
 
 connect = pymysql.connect(host='mysql',
                          port=3306,
