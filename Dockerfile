@@ -19,5 +19,6 @@ linux-headers \
 xz
 RUN mkdir /app
 RUN pip install pymysql && \
-python3 -m pip install -U discord.py
+python3 -m pip install -U discord.py &&\
+pip3 install django
 WORKDIR /app
